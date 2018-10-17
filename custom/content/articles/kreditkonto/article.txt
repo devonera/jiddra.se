@@ -1,0 +1,6 @@
+title: Kreditkonto
+seo_title: Kreditkonto
+seo_description: 
+page_title: Kreditkonto
+rows_headline: Kreditkonto
+rows_collection: kreditkonto

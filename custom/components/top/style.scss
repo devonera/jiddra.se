@@ -1,0 +1,172 @@
+/*comp-top {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  //box-shadow: 0 0 1rem rgba(0,0,0,.2);
+
+  &.line {
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: flex;
+      height: 6rem;
+
+      &.logo {
+        margin: 0 auto;
+        a {
+          display: flex;
+          align-items: center;
+          
+          img {
+            display: block;
+            height: 2.5rem;
+          }
+        }
+      }
+
+      &.nav {
+        a {
+          display: flex;
+          padding: 1rem;
+        }
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+
+  ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    //padding: .1rem;
+    //max-width: 400px;
+    margin: 0 auto;
+    //justify-content: center;
+    max-width: $large;
+
+    li {
+      //width: calc(100% / 2);
+      //margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.logo {
+        margin-right: 1rem;
+
+        a {
+          display: flex;
+          align-items: center;
+          height: 6rem;
+          img {
+            height: 2rem;
+          }
+        }
+      }
+
+      a {
+        color: #000;
+        //color: #fff;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        padding: .75rem 1rem;
+        //background: rgba(0,0,0,.1);
+        //margin: .1rem;
+        font-size: 17.4px;
+        font-weight: 400;
+        font-family: "acumin-pro";
+      }
+    }
+  }
+}
+*/
+
+comp-top {
+  .bar {
+    display: flex;
+    margin: 0 auto;
+    max-width: $large;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: $default) {
+      padding-left: 1rem;
+      height: 6rem;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .logo {
+      @media screen and (max-width: $default) {
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+      }
+      a {
+        display: flex;
+        margin-right: 2rem;
+
+        @media screen and (max-width: $default) {
+          margin-right: 0;
+        }
+        img {
+          height: 1rem;
+
+          @media screen and (min-width: $default) {
+            height: 2rem;
+          }
+        }
+      }
+    }
+
+    .menu {
+      margin-bottom: .5rem;
+      
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          font-size: 1rem;
+
+          @media screen and (max-width: $default) {
+            width: calc(100%/3);
+            text-align: center;
+            font-size: .9rem;
+          }
+          &.active {
+            a {
+              background: #bb0060;
+              color: #fff;
+            }
+          }
+
+          a {
+            border: 2px solid #fff;
+            text-decoration: none;
+            background: #eee;
+            color: #000;
+            display: block;
+            padding: .5rem 1rem;
+            white-space: nowrap;
+
+            @media screen and (max-width: $default) {
+              padding: .5rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

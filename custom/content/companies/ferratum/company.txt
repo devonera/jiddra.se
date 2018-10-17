@@ -1,0 +1,23 @@
+title: Ferratum
+seo_title: Ferratum - Låna 30 000 kr räntefritt i 30 dagar
+seo_description: Om du vill slippa ränta och andra kostnader så kan du låna räntefritt hos Ferratum.
+text:
+
+Lånar du hos Ferratum behövs varken säkerhet eller borgensman. Upplysningscentralen (UC) tas inte. Istället används Creditsafe för att göra en kreditupplysning. Du kan ha betalningsanmärkningar och ändå låna.
+                      
+Hos Ferratum kan du låna upp till 30000 kr i 30 dagar.
+                      
+Kundtjänsten är öppet alla dagar i veckan och du kan även låna under helger. Om du har Nordea, Swedbank, Handelsbanken eller SEB så får du även pengarna på helgen, oftast inom några minuter. Har du någon annan bank kommer de fram nästa bankdag.
+                      
+Ferratum har funnits länge på marknaden och de har ett bra omdöme på Trustpilot så kunderna är överlag mycket nöjda.
+affiliate_url: https://track.adtraction.com/t/t?a=679911485&as=1264789459&t=2&tk=1
+hero: ferratum.jpg
+site_url: https://www.ferratum.se
+ny_kund_min_belopp: 1000
+ny_kund_max_belopp: 30000
+befintling_kund_min_belopp: 1000
+befintlig_kund_max_belopp: 30000
+gratis_min_belopp: 1000
+gratis_max_belopp: 30000
+gratis_max_loptid: 30
+gratis_max_typ: dagar

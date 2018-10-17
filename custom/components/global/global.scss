@@ -1,0 +1,80 @@
+$small: 320px;
+$medium: 480px;
+$default: 640px;
+$large: 900px;
+$xlarge: 1140px;
+
+$plarge: 900px + (8 * 16px);
+
+//http://www.color-hex.com/color/778899
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "acumin-pro";
+  font-family: roboto;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --color-red: #BB0060;
+  --color-gray: #e9f0f6;
+  --color-gray: #65a0d2;
+  //--color-red: #7aa529;
+  --main-padding: 2rem 1rem;
+  --hero-sides: 0 1rem;
+  --hero-outside: 0;
+
+  /*@media screen and (min-width: $small) {
+    --main-padding: 1rem;
+  }*/
+
+  @media screen and (min-width: $medium) {
+    --main-padding: 2rem 1rem;
+    --hero-sides: 0 2rem;
+  }
+
+  @media screen and (min-width: $default) {
+    --main-padding: 4rem 2rem;
+    --hero-sides: 0 2rem;
+  }
+
+  @media screen and (min-width: $large) {
+    --main-padding: 4rem 2rem;
+    --hero-sides: 0 4rem;
+  }
+
+  @media screen and (min-width: $xlarge) {
+    --main-padding: 4rem;
+  }
+}
+
+.button {
+  background: #006cbb;
+  padding: .75rem 2rem;
+  color: #fff;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+
+  &:hover {
+    background: darken(#006cbb, 5%);
+  }
+}

@@ -1,0 +1,6 @@
+title: Snabblån
+seo_title: Snabblån &amp; smslån
+seo_description: 
+page_title: Snabblån och smslån
+rows_headline: Snabblån
+rows_collection: snabblan

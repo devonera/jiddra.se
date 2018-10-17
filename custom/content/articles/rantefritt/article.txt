@@ -1,0 +1,7 @@
+title: Smslån
+seo_title: Smslån och snabblån
+seo_description: Vi jämför smslån och snabblån för att du ska få de bästa möjliga förutsättningarna för ett bra lån. Är service eller kostnad viktigt? Du bestämmer!
+page_title: Smslån och Snabblån
+lantyp: smslan
+rows_headline: Räntefria lån
+rows_collection: rantefritt

@@ -1,0 +1,1 @@
+Låna <?= $item->gratis_min_belopp(); ?> - <?= $item->gratis_max_belopp(); ?> kr räntefritt i <?= $item->gratis_max_loptid(); ?> <?= $item->gratis_max_typ(); ?>

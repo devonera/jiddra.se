@@ -1,0 +1,32 @@
+title: Meddelandelån
+seo_title: Meddelandelån - Låna 1000 kr räntefritt i 1 månad
+seo_description: Om du vill slippa ränta och andra kostnader så kan du låna räntefritt hos Meddelandelån.
+text:
+
+Företaget har funnit sedan 2006 så det är väl etablerat på marknaden. Om man är i behov av ett mindre lån som ska betalas tillbaka efter en kort tid så kan man göra det. De erbjuder även större lån med längre låntid som då sträcker sig över flera år.
+
+Du kan låna 1000 kr i 1 månad räntefritt hos Meddelandelån.
+
+Meddelandelån har själva skrivit ihop en lista på varför man bör låna hos just dem:
+
+- Bra öppettider på kundtjänst
+- Utbetalning sker direkt till bankerna Nordea och Handelsbanken
+- Upplysningscentralen (UC) används inte för kreditupplysning
+- De är populära bland kunderna och har utmärkelsen "Utmärkt service"
+- Det kostar ingenting att ansöka
+- Låntid från 1 månad till 3 år beroende på ditt behov
+- Lånebelopp från 1000 kr till 30000 kr
+- Förlängning av lån med 30 dagar kan göras om det behövs
+
+Lånen som tas kräver ingen säkerhet vilket banken ofta kräver.
+affiliate_url: https://track.adtraction.com/t/t?a=1037149128&as=1264789459&t=2&tk=1
+hero: meddelandelan.png
+site_url: https://www.meddelandelan.se
+ny_kund_min_belopp: 1000
+ny_kund_max_belopp: 30000
+befintling_kund_min_belopp: 1000
+befintlig_kund_max_belopp: 30000
+gratis_min_belopp: 1000
+gratis_max_belopp: 1000
+gratis_max_loptid: 1
+gratis_max_typ: månad

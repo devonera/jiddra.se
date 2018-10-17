@@ -1,0 +1,46 @@
+Author: Bastian Allgeier GmbH
+
+----
+
+Description: This is Kirby's Starterkit.
+
+----
+
+Copyright: Kirby Kitchensink
+
+----
+
+Title: Kirby Kitchensink
+
+----
+
+Twitter: getkirby
+
+----
+
+Instagram: getkirby
+
+----
+
+Metatitle: Kirby Kitchensink
+
+----
+
+Metadescription: This is Kirby's demo installation with lots of hopefully interesting examples
+
+----
+
+Tags: 
+
+- 
+  name: Design
+  value: design
+- 
+  name: Architecture
+  value: architecture
+- 
+  name: Photography
+  value: photography
+- 
+  name: Technology
+  value: technology
