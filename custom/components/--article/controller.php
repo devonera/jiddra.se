@@ -51,53 +51,19 @@ return function($component, $matches) {
     $merged[$child]['page'] = $company[$child]['page'];
   }
 
+  $Flatten = new Flatten();
+  $Flatten->set($collection);
+  $collection = $Flatten->get($collection);
+  $services = vHelpers::flattenServices($services);
+  $collection = array_merge($collection, $services);
+
+  $collection = vHelpers::filter($page, $collection);
+
   $data['children'] = $merged;
   $data['headline'] = 'Nåt annat';
   $data['page'] = $current['page'];
   $data['story'] = $story['story'];
-
-  foreach($merged as $path => $current) {
-    if(isset($current['snabblan']['snabblan-item'])) {
-      $items = $current['snabblan']['snabblan-item'];
-      foreach($items as $name => $item) {
-        if(isset($item['raw']))
-          $filter[$path][$name] = $item['raw'];
-      }
-    } else {
-      $filter[$path] = null;
-    }
-  }
-
-  $Flatten = new Flatten();
-  $Flatten->set($collection);
-  $collection = $Flatten->get($collection);
-
-  $f = new TinyFilters();
-  $f->add('alder_min', 'same', 18);
-
-  foreach($collection as $path => $item) {
-    if(!$f->validate($item)) unset($collection[$path]);
-  }
-
-  #print_r($collection); die;
-
-  /*$f = new TinyFilters();
-  $f->add('alder_min', 'equals', 18);
-
-  foreach($collection as $path => $child) {
-    $filter = filter($child);
-    $result = array_reduce($filter, 'array_merge', array());
-    foreach($result as $key => $item) {
-      if(!isset($item['raw'])) continue;
-
-      $out[$key] = $item['raw'];
-
-      if(!$f->validate($out))
-      unset($collection[$path]);
-    }
-  }*/
-
-  print_r($collection);
+  $data['filtered'] = $collection;
 
   return $data;
 };

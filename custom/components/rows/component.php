@@ -6,7 +6,8 @@
 
 <div class="rows">
   <ul>
-    <?php foreach($children as $path => $child) : ?>
+    <?php foreach($filtered as $path => $misc) : ?>
+      <?php $child = $children[$path]; ?>
       <li>
         <a href="<?= url(basename($path)); ?>">
           <?php

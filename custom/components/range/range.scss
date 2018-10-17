@@ -1,0 +1,79 @@
+$track-h: .25em;
+$thumb-d: 1.5em;
+$track-c: #ccc;
+
+@mixin track() {
+	box-sizing: border-box;
+	border: none;
+  height: $track-h;
+  width: 100%;
+	background: $track-c;
+}
+
+@mixin thumb() {
+	box-sizing: border-box;
+	border: none;
+  width: $thumb-d;
+  height: $thumb-d;
+	border-radius: 50%;
+	background: #bb0060;
+}
+
+.rangeslider {
+	display: flex;
+	align-items: center;
+	position: relative;
+  //height: 3.5*$thumb-d;
+  width: 100%;
+	font: 1em/1 arial, sans-serif
+}
+
+[type='range'] {
+  outline: none;
+  width: 100%;
+
+	&, &::-webkit-slider-thumb {
+		-webkit-appearance: none
+	}
+	
+	flex: 1;
+	margin: 0;
+	padding: 0;
+	min-height: $thumb-d;
+	background: transparent;
+	font: inherit;
+	
+	&::-webkit-slider-runnable-track {
+		@include track()
+	}
+	&::-moz-range-track { @include track }
+	&::-ms-track { @include track }
+	
+	&::-webkit-slider-thumb {
+		margin-top: .5*($track-h - $thumb-d);
+		@include thumb
+	}
+	&::-moz-range-thumb { @include thumb }
+	&::-ms-thumb {
+		margin-top: 0;
+		@include thumb
+	}
+	
+	&::-ms-tooltip { display: none }
+	
+	~ output {
+		display: none;
+		
+		.js & {
+			display: block;
+			padding: .25em .5em;
+			border-radius: 3px;
+			background: #333;
+      color: #eee;
+      
+      &:after {
+        content: ' kr';
+      }
+		}
+	}
+}
