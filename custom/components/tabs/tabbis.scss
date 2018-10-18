@@ -1,0 +1,24 @@
+.tabs {
+	background: #ddd;
+}
+
+[data-tabs] {
+	display: flex;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+[data-tabs] >* {
+	padding: 1rem 1rem;
+	cursor: pointer;
+}
+[data-tabs] .active {
+	border-bottom: 2px solid red;
+}
+[data-panes] > * {
+	display: none;
+	border-top: none;
+}
+[data-panes] > .active {
+	display: block;
+}

@@ -23,5 +23,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+var select = new CustomSelect({
+    elem: "color-select", 
+});
+
+var select2 = new CustomSelect({
+    elem: "age",
+});
+
+var select3 = new CustomSelect({
+    elem: "type",
+});
+
+<?php /*
+document.addEventListener('DOMContentLoaded',function() {
+    document.querySelector('#color-select').onchange=changeEventHandler;
+},false);
+
+function changeEventHandler(event) {
+    // You can use “this” to refer to the selected element.
+    if(!event.target.value) alert('Please Select One');
+    else alert('You like ' + event.target.value + ' ice cream.'); 
+}
+*/ ?>
+</script>
+
 </body>
 </html>
