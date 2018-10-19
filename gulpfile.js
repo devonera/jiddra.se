@@ -1,10 +1,8 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var gutil = require('gulp-util');
 var minifyJS = require('gulp-minify');
-//var imagemin = require('gulp-imagemin');
 
 // Core CSS
 gulp.task('css', function() {
@@ -15,7 +13,6 @@ gulp.task('css', function() {
     .pipe(concat('style.min.scss'))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('custom/cache/assets/css'))
-    .pipe(notify("CSS generated!"));
 });
 
 // JS
@@ -27,15 +24,7 @@ gulp.task('js', function() {
     .pipe(minifyJS())
     .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
     .pipe(gulp.dest('custom/cache/assets/js'))
-    .pipe(notify("JS generated!"));
 });
-
-// Min
-/*gulp.task('min', () =>
-    gulp.src('media/**', { base: "./" })
-        .pipe(imagemin())
-        .pipe(gulp.dest('.'))
-);*/
 
 // Default
 gulp.task('default', function() {

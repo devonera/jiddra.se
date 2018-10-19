@@ -13,6 +13,7 @@ var tabbis = (function () {
 	var memory = [];
 
 	fn.init = function(options) {
+		console.log('init');
 		data = options;
 		fn.setDefaults();
 		fn.setMemory();
@@ -36,6 +37,7 @@ var tabbis = (function () {
 	};
 
 	fn.onClick = function(groupIndex, itemIndex) {
+		console.log('click');
 		fn.setNodes(groupIndex, itemIndex);
 
 		fn.setCallback(indexGroup, indexItem);

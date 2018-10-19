@@ -1,0 +1,1 @@
+<?= component('rows', ['headline' => $headline]); ?>

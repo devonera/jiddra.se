@@ -49,5 +49,11 @@ function changeEventHandler(event) {
 */ ?>
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  var collect = data.init();
+});
+</script>
+
 </body>
 </html>

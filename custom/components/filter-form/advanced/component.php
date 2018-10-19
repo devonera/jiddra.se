@@ -2,37 +2,37 @@
   <div class="form">
     <label>Lånebelopp</label>
     <div class="rangeslider">
-      <input type="range" min="10" step="10" />
+      <input type="range" min="10" step="10" name="belopp"/>
       <output>50</output>
     </div>
 
     <label>Löptid</label>
     <div class="rangeslider">
-      <input type="range" min="1000" max="30000" step="1000" />
+      <input type="range" min="1000" max="30000" step="1000" name="loptid" />
       <output>3000</output>
     </div>
 
     <div class="checkboxes">
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Räntefritt</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="rantefritt"><span>Räntefritt</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Anmärkning godtas</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="anmarkning"><span>Anmärkning godtas</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Utan inkomstkrav</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="inkomstkrav"><span>Utan inkomstkrav</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">BankID / E-leg</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="eleg"><span>BankID / E-leg</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Öppet nu</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="oppetnu"><span>Öppet nu</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Har privat chatt</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="chatt"><span>Har privat chatt</span></label>
       </div>
       <div class="item">
-        <label><input type="checkbox" class="materail-checkbox-input">Utan uppläggningsavgift</label>
+        <label><input type="checkbox" class="materail-checkbox-input" name="upplaggningsavgift"><span>Utan uppläggningsavgift</span></label>
       </div>
     </div>
 

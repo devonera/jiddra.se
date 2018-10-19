@@ -1,6 +1,6 @@
 <?php
-return function($component, $matches) {
-  $page = page();
+return function($component, $matches, $page = null) {
+  $page = !isset($page) ? page() : $page;
 
   $children = children('companies');
   //$children = array_slice($children, 0, 15);

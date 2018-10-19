@@ -1,5 +1,6 @@
 .tabs {
-	background: #ddd;
+	background: #333;
+	color: #fff;
 }
 
 [data-tabs] {
@@ -13,7 +14,20 @@
 	cursor: pointer;
 }
 [data-tabs] .active {
-	border-bottom: 2px solid red;
+	//border-bottom: 2px solid #fff;
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 0; 
+		height: 0; 
+		border-left: .4rem solid transparent;
+		border-right: .4rem solid transparent;
+		border-bottom: .4rem solid #f5f5f5;
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - .2rem);
+	}
 }
 [data-panes] > * {
 	display: none;

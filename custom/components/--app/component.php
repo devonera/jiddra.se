@@ -3,13 +3,13 @@
 <main>
   <div class="tabs">
     <div data-tabs>
-      <div>Enkel</div>
+      <div class="active">Enkel</div>
       <div>Avancerad</div>
     </div>
   </div>
 
   <div data-panes>
-    <div><?= component('filter-form/simple'); ?></div>
+    <div class="active"><?= component('filter-form/simple'); ?></div>
     <div><?= component('filter-form/advanced'); ?></div>
     <div>Pane3</div>
   </div>
@@ -44,5 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 });
 </script>
+
+<div class="results"></div>
 
 <?= component('footer'); ?>
