@@ -3,15 +3,24 @@ class vHelpers {
   function filter($name, $collection) {
     $f = new TinyFilters();
     $vgroups = new ValidatorGroups();
-    $f = $vgroups->{$name}($f, $collection);
-    return self::unsetCollection($f, $collection);
+
+    $CustomValidators = new CustomValidators();
+    $f->addValidators($CustomValidators);
+
+    return self::unsetCollection($f, $collection, $vgroups, $name);
   }
 
-  function unsetCollection($f, $collection) {
+  function unsetCollection($f, $collection, $vgroups, $name) {
     foreach($collection as $path => $item) {
+      $f = $vgroups->{$name}($f);
       if(!$f->validate($item)) unset($collection[$path]);
     }
+    print_r($collection);
     return $collection;
+  }
+
+  function setGroups($vgroups, $name, $f) {
+    return $vgroups->{$name}($f);
   }
 
   function flattenServices($services) {
@@ -24,6 +33,8 @@ class vHelpers {
     if(!isset($formatted)) return;
 
     foreach($formatted as $path => $service) {
+      $out[$path]['slug'] = basename($path);
+      
       if(!isset($service)) continue;
 
       foreach($service as $type => $item) {

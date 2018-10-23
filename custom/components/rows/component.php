@@ -11,7 +11,7 @@
       <li>
         <a href="<?= url(basename($path)); ?>">
           <?php
-          $iconpath = path::get('content') . '/companies/' . basename($path) . '/icon';
+          $iconpath = root() . '/../meta/companies/' . basename($path) . '/icon';
           if(file_exists($iconpath . '.svg')) {
             $extension = 'svg';
           } elseif(file_exists($iconpath. '.png')) {
@@ -19,10 +19,9 @@
           }elseif(file_exists($iconpath . '.jpg')) {
             $extension = 'jpg';
           }
-
           ?>
           <figure>
-              <img src="<?= url('assets/content/companies/' . basename($path) . '/icon.' . $extension); ?>" width="100">
+              <img src="<?= url('meta/assets/companies/' . basename($path) . '/icon.' . $extension); ?>" width="100">
           </figure>
           <div class="text">
             <h3><?= $child['page']['title']; ?></h3>

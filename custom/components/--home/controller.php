@@ -1,7 +1,7 @@
 <?php
 return function($component, $matches) {
-  $children = children('companies');
-  /*$children = array_slice($children, 0, 5);
+  /*$children = children('companies');
+  $children = array_slice($children, 0, 5);
 
   $children = [
     path::fromUri('companies/vivus'),
@@ -9,7 +9,7 @@ return function($component, $matches) {
     path::fromUri('companies/natlan'),
     path::fromUri('companies/meddelandelan'),
     path::fromUri('companies/loanstep'),
-  ];*/
+  ];
 
   $kreditkonto = data::set($children, [
     'kreditkonto/item.csv' => 'kreditkonto-item',
@@ -52,5 +52,8 @@ return function($component, $matches) {
   #print_r($data);
   #die;
 
-  return $data;
+  return $data;*/
+
+  $callback = include __DIR__ . '/../--article/controller.php';
+  return $callback($component, $matches, 'home');
 };

@@ -1,8 +1,7 @@
 <?php
 class ValidatorGroups {
-  function test($collection) {
-    $this->f->add('alder_min', 'same', 18);
-    $this->ValidatorHelpers->unsetCollection($this->f, $collection);
+  function home($f) {
+    return $f;
   }
 
   function rantefritt($f) {
@@ -22,28 +21,62 @@ class ValidatorGroups {
 
   function api($f) {
     $_POST = json_decode(file_get_contents('php://input'), true);
-    echo gettype($_POST['anmarkning']);
-    print_r($_POST);
-    #$array = json_decode($_POST[0]);
-    #print_r($array);
-    #$f->add('telefon', 'isString');
-    $f->add('alder_min', 'isString');
-    if($_POST['anmarkning']) $f->add('betalningsanm_accepteras', 'same', true);
+
+    // Anmärkning
+    if($_POST['anmarkning']) {
+      $f->add('betalningsanm_accepteras', 'equals', 'true');
+    }
+
+    // Inkomstkrav
+    if($_POST['inkomstkrav']) {
+      $f->add('inkomstkrav', 'equals', '0');
+    }
+
+    // Inkomstkrav
+    if($_POST['chatt']) {
+      $f->add('chatt', 'equals', 'true');
+    }
+
+    // Åldersgräns
+    if($_POST['age']) {
+      $f->add('alder_min', 'max', 21);
+    }
+
+    // Snabblån
+    if($_POST['type']) {
+      $f->add('types', 'in', $_POST['type']);
+    }
+
+    // Räntefritt
+    if($_POST['rantefritt']) {
+      $f->add('gratis_belopp_min', 'min', 0);
+    }
+
+    // Räntefritt
+    if($_POST['utanuc']) {
+      $f->add('uc', 'equals', false);
+    }
+
+    // Belopp
+    if($_POST['belopp']) {
+      $f->add('befintlig_kund_belopp_min', 'max', $_POST['belopp']);
+      $f->add('befintlig_kund_belopp_max', 'min', $_POST['belopp']);
+    }
+
+    // Bank
+    if($_POST['bank']) {
+      $f->add('direktutbetalning_banker', 'contains', $_POST['bank']);
+    }
+
+    // Eleg
+    if($_POST['eleg']) {
+      $f->add('identifiering', 'contains', 'bankid');
+    }
+
+    if($_POST['oppetnu']) {
+      $f->add('oppettider', 'openNow', 'bankid');
+    }
+
     return $f;
   }
 }
-
-/*
-[belopp] => 30
-    [loptid] => 16000
-    [rantefritt] => 
-    [anmarkning] => 
-    [inkomstkrav] => 
-    [eleg] => 
-    [oppetnu] => 
-    [chatt] => 
-    [upplaggningsavgift] => 
-    [color] => 
-    [age] => 
-    [type] => 
-*/

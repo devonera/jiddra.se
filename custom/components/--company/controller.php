@@ -11,8 +11,10 @@ return function($component, $matches) {
     'snabblan-kostnader' => 'Kostnader',
   ];
 
+  $company_path = root() . '/../meta/companies/' . $page;
+
   // Raw data
-  $collection = filter(data::set(path::fromUri('companies/' . $page), [
+  $collection = filter(data::set($company_path, [
     'info.csv' => 'info',
     'kontakt.csv' => 'kontakt',
     'krav.csv' => 'krav',
@@ -21,25 +23,23 @@ return function($component, $matches) {
     'weekdays.csv' => 'weekdays',
   ]));
 
-  $story = data::set(path::fromUri('companies/' . $page), [
+  $story = data::set($company_path, [
     'story.md' => 'story'
   ]);
 
-  $page_data = filter(data::set(path::fromUri('companies/' . $page), [
+  $page_data = filter(data::set($company_path, [
     'company.txt' => 'page',
   ]));
 
-  $kreditkonto = filter(data::set(path::fromUri('companies/' . $page), [
+  $kreditkonto = filter(data::set($company_path, [
     'kreditkonto/item.csv' => 'kreditkonto-item',
     'kreditkonto/kostnader.csv' => 'kreditkonto-kostnader',
   ]));
 
-  $snabblan = filter(data::set(path::fromUri('companies/' . $page), [
+  $snabblan = filter(data::set($company_path, [
     'snabblan/item.csv' => 'snabblan-item',
     'snabblan/kostnader.csv' => 'snabblan-kostnader',
   ]));
-
-  #print_r($snabblan);
 
   if(!empty($kreditkonto)) $services['kreditkonto'] = $kreditkonto;
   if(!empty($snabblan)) $services['snabblan'] = $snabblan;
@@ -57,9 +57,6 @@ return function($component, $matches) {
     $data['services'] = $services;
   }
   $data['headings'] = $headings;
-
-  #print_r($data);
-  #die;
 
   return $data;
 };

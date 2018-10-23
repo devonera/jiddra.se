@@ -25,11 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script>
 var select = new CustomSelect({
-    elem: "color-select", 
-});
-
-var select2 = new CustomSelect({
-    elem: "age",
+    elem: "bank", 
 });
 
 var select3 = new CustomSelect({

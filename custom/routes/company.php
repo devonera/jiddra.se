@@ -1,6 +1,6 @@
 <?php
 $regex = '(';
-foreach(children('companies') as $child) {
+foreach(outsideChildren('companies') as $child) {
   $company = basename($child);
   $regex .= $company . '|';
 }

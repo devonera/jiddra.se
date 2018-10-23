@@ -2,7 +2,8 @@
 return function($component, $matches, $page = null) {
   $page = !isset($page) ? page() : $page;
 
-  $children = children('companies');
+  //$children = children('companies');
+  $children = outsideChildren('companies');
   //$children = array_slice($children, 0, 15);
 
   $kreditkonto = data::set($children, [
@@ -12,6 +13,7 @@ return function($component, $matches, $page = null) {
 
   $snabblan = data::set($children, [
     'snabblan/item.csv' => 'snabblan-item',
+    'snabblan/kostnader.csv' => 'snabblan-kostnader',
   ]);
 
   $current = data::set(path::get('content') . '/articles/' . $page, [
@@ -28,6 +30,7 @@ return function($component, $matches, $page = null) {
   $collection = data::set($children, [
     'info.csv' => 'info',
     'krav.csv' => 'krav',
+    'kontakt.csv' => 'kontakt',
     'weekdays.csv' => 'weekdays',
   ]);
 
@@ -52,10 +55,15 @@ return function($component, $matches, $page = null) {
   }
 
   $Flatten = new Flatten();
+
+  #print_r($merged);
+
   $Flatten->set($collection);
   $collection = $Flatten->get($collection);
+
   $services = vHelpers::flattenServices($services);
-  $collection = array_merge($collection, $services);
+  $collection = array_merge_recursive($collection, $services);
+
 
   $collection = vHelpers::filter($page, $collection);
 

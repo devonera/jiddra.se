@@ -19,11 +19,16 @@ class DataGroups {
       'Lördag',
       'Söndag'
     ];
-    return $Daybreaker->convert($items, $weekdays);
+    $converted = $Daybreaker->convert($items, $weekdays);
+    $result['oppettider']['raw'] = $items;
+    $result['oppettider']['nice'] = $converted;
+    return $result;
   }
 
   function kostnader($items) {
-    return $items;
+    $result['kostnader']['raw'] = $items;
+    $result['kostnader']['nice'] = $items;
+    return $result;
   }
 
   function quotes($items) {
