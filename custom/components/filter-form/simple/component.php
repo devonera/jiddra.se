@@ -2,8 +2,8 @@
   <div class="form">
     <label>Lånebelopp</label>
     <div class="rangeslider">
-      <input type="range" min="10" step="10" />
-      <output>50</output>
+      <input type="range" min="1000" max="30000" step="1000" name="belopp"/>
+      <output class="kr">1000</output>
     </div>
   </div>
 </div>

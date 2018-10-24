@@ -23,33 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<script>
-var select = new CustomSelect({
-    elem: "bank", 
-});
-
-var select3 = new CustomSelect({
-    elem: "type",
-});
-
-<?php /*
-document.addEventListener('DOMContentLoaded',function() {
-    document.querySelector('#color-select').onchange=changeEventHandler;
-},false);
-
-function changeEventHandler(event) {
-    // You can use “this” to refer to the selected element.
-    if(!event.target.value) alert('Please Select One');
-    else alert('You like ' + event.target.value + ' ice cream.'); 
-}
-*/ ?>
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  var collect = data.init();
-});
-</script>
+<?php if(isset($route)) : ?>
+  <?= component($route . '/footer.php'); ?>
+<?php endif; ?>
 
 </body>
 </html>

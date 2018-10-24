@@ -4,6 +4,11 @@
     position: relative;
     width: 100%;
 
+    input {
+      z-index: -1;
+      position: relative;
+    }
+
     input:checked ~ span:before {
       transform: rotate(-45deg);
       height: .5rem;
@@ -28,7 +33,7 @@
         z-index: 1;
         width: 1rem;
         height: 1rem;
-        border: 2px solid #ccc;
+        border: 2px solid #888;
       }
 
       &:after {
@@ -37,7 +42,7 @@
         left: 0;
         width: 1.1rem;
         height: 1.1rem;
-        background: #f5f5f5;
+        //background: #f5f5f5;
         cursor: pointer;
       }
     }

@@ -56,8 +56,6 @@ return function($component, $matches, $page = null) {
 
   $Flatten = new Flatten();
 
-  #print_r($merged);
-
   $Flatten->set($collection);
   $collection = $Flatten->get($collection);
 
@@ -72,6 +70,8 @@ return function($component, $matches, $page = null) {
   $data['page'] = $current['page'];
   $data['story'] = $story['story'];
   $data['filtered'] = $collection;
+
+  $data['route'] = '--article';
 
   return $data;
 };

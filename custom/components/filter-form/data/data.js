@@ -3,10 +3,7 @@ var data = (function () {
 
   fn.init = function() {
     fn.collection = {};
-    fn.selector = {};
-    fn.selector['range'] = '[data-panes] > .active input[type="range"]';
-    fn.selector['checkbox'] = '[data-panes] > .active .checkboxes input[type="checkbox"]';
-    fn.selector['select'] = '[data-panes] > .active .selectboxes select';
+    fn.selectors();
 
     Object.keys(fn.selector).forEach(function(key) {
       fn.get(key);
@@ -14,6 +11,14 @@ var data = (function () {
     });
 
     fn.collection = Object.assign({}, fn.collection);
+    fn.ajax();
+  };
+
+  fn.selectors = function() {
+    fn.selector = {};
+    fn.selector['range'] = '.form input[type="range"]';
+    fn.selector['checkbox'] = '.form .checkboxes input[type="checkbox"]';
+    fn.selector['select'] = '.form .selectboxes select';
   };
 
   fn.go = function() {
@@ -43,7 +48,6 @@ var data = (function () {
       method: 'POST',
       body: json,
       headers: {
-        //"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         "Content-Type": "Content-Type: application/json"
     },
     }).then(function(response) {
@@ -66,6 +70,28 @@ var data = (function () {
     return item.options[item.selectedIndex].value;
   };
 
+  fn.reset = function() {
+    fn.selectors();
+    var checkboxes = document.querySelectorAll(fn.selector['checkbox']);
+    var selects = document.querySelectorAll(fn.selector['select']);
+
+    for(i=0; i<checkboxes.length; i++) {
+      checkboxes[i].checked = false;
+    }
+
+    for(i=0; i<selects.length; i++) {
+      var current = selects[i];
+      var group = current.previousElementSibling;
+      var button = group.querySelector('button');
+      var list_item_current = group.querySelector('[data-index="' + current.selectedIndex +  '"]');
+      var list_item_first = group.querySelector('[data-index="0"]').innerHTML;
+      button.innerHTML = list_item_first;
+      list_item_current.classList.remove('is-selected');
+
+      current.selectedIndex = 0;
+    }
+  };
+
   fn.trigger = function(type) {
     var selector = fn.selector[type];
     var items = document.querySelectorAll(selector);
@@ -79,5 +105,3 @@ var data = (function () {
   
 	return fn;
 })();
-
-// Trigger tab

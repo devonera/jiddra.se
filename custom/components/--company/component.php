@@ -72,9 +72,9 @@
             </section>
           <?php endif; ?>
 
-          <?php if($data['weekdays']) : ?>
+          <?php if($data['weekdays']['oppettider']['nice']) : ?>
             <section class="columns">
-              <?= component('--company/list', ['items' => $data['weekdays'], 'block_title' => 'Öppettider']); ?>
+              <?= component('--company/list', ['items' => $data['weekdays']['oppettider']['nice'], 'block_title' => 'Öppettider']); ?>
             </section>
           <?php endif; ?>
           <section>

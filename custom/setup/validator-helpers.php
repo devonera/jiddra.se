@@ -15,7 +15,7 @@ class vHelpers {
       $f = $vgroups->{$name}($f);
       if(!$f->validate($item)) unset($collection[$path]);
     }
-    print_r($collection);
+    #print_r($collection);
     return $collection;
   }
 
