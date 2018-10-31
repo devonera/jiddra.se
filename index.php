@@ -2,11 +2,12 @@
 include __DIR__ . '/../../io-cms/core/index.php';
 
 setPaths([
-  'custom' => __DIR__ . '/custom'
+  'custom' => __DIR__ . '/custom',
+  'plugins' => __DIR__ . '/../../plugins'
 ]);
 
 setUrls([
-  'root' => 'http://localhost/io/sites/jiddra.se'
+  'root' => 'http://localhost/io/sites/jiddra.se',
 ]);
 
 init();

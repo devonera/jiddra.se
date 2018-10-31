@@ -10,11 +10,12 @@ return [
         'creditsafe' => 'Creditsafe'
       ]
     ],
-    'uc' => [
+    /*'uc' => [
       'use' => 'upplysningsbolag',
-      'type' => 'has',
+      'type' => 'in',
+      'match' => 'uc',
       'label' => 'Tar UC',
-    ],
+    ],*/
     'identifiering' => [
       'type' => 'sentence',
       'label' => 'Identifiering',

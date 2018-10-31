@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <?php if(page() == 'rantefria-lan') : ?>
+  <?php if(page() == 'rantefritt') : ?>
     <title>Räntefritt lån - Smslån, snabblån &amp; blancolån</title>
     <meta name="description" content="Ta ett räntefritt lån för att slippa extra kostnader.">
   <?php else : ?>
-    <?php if(!empty($page['seo_title'])) : ?>
-      <title><?= $page['seo_title']; ?></title>
+    <?php if(!empty($seo_title)) : ?>
+      <title><?= $seo_title; ?></title>
     <?php else : ?>
-      <title><?= $page['title']; ?></title>
+      <title><?= $title; ?></title>
     <?php endif; ?>
-    <?php if(!empty($page['seo_description'])) : ?>
-      <meta name="description" content="<?= $page['seo_description']; ?>">
+    <?php if(!empty($seo_description)) : ?>
+      <meta name="description" content="<?= $seo_description; ?>">
     <?php endif; ?>
   <?php endif; ?>
 

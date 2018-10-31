@@ -1,6 +1,6 @@
 <?php
 return function() {
-  $data['page'] = [
+  $data = [
     'seo_title' => 'Jämför &amp; filtrera lån'
   ];
   $data['story'] = 'lite text';

@@ -24,12 +24,6 @@ function slug($string) {
   );
 }
 
-function children($uri = 'companies') {
-  $pattern = path::get('content') . '/' . $uri . '/[!_]*';
-  $glob = glob($pattern, GLOB_ONLYDIR);
-  return $glob;
-}
-
 function services($uri = 'companies/vivus') {
   $folder_uri = path::get('content') . '/' . $uri;
 

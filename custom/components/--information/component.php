@@ -4,7 +4,7 @@
 
   <div class="page">
     <format-text>
-      <h1><?= $page['title']; ?></h1>  
+      <h1><?= $title; ?></h1>  
       <?= $story; ?>
       <?php if(page() == 'kontakt') : ?>
       <?= getObfuscatedEmailLink('vardagsfinans.se@gmail.com'); ?>

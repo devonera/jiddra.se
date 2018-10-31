@@ -17,7 +17,7 @@
         <li<?= page::slug() == 'kreditkonto' ? ' class="active"': ''; ?>><a href="<?= url('kreditkonto'); ?>">Kreditkonto</a></li>
         <li<?= page::slug() == 'app' ? ' class="active"': ''; ?>><a href="<?= url('app'); ?>">Kunskap</a></li>
         */?>
-        <li<?= page::slug() == 'app' ? ' class="active"': ''; ?>><a href="<?= url('app'); ?>">Lån</a></li>
+        <li<?= page::slug() == 'lan' ? ' class="active"': ''; ?>><a href="<?= url('lan'); ?>">Lån</a></li>
         
       </ul>
     </div>

@@ -1,6 +1,8 @@
 <?php
+$childpath = path::get('root') . '/../meta';
+
 $regex = '(';
-foreach(outsideChildren('companies') as $child) {
+foreach(children('companies', $childpath) as $child) {
   $company = basename($child);
   $regex .= $company . '|';
 }

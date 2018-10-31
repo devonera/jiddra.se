@@ -24,11 +24,11 @@
               <img src="<?= url('meta/assets/companies/' . basename($path) . '/icon.' . $extension); ?>" width="100">
           </figure>
           <div class="text">
-            <h3><?= $child['page']['title']; ?></h3>
-            <?php if(isset($child['snabblan']['snabblan-item'])) : ?>
-              Ansök om <?= $child['snabblan']['snabblan-item']['befintlig_kund_belopp']['nice']; ?>
-            <?php elseif(isset($child['kreditkonto']['kreditkonto-item'])) : ?>
-              Ansök om <?= $child['kreditkonto']['kreditkonto-item']['befintlig_kund_belopp']['nice']; ?>
+            <h3><?= $child['title']; ?></h3>
+            <?php if(isset($child['snabblan--item.csv'])) : ?>
+              Ansök om <?= $child['snabblan--item.csv']['befintlig_kund_belopp']['nice']; ?>
+            <?php elseif(isset($child['kreditkonto--item.csv'])) : ?>
+              Ansök om <?= $child['kreditkonto--item.csv']['befintlig_kund_belopp']['nice']; ?>
             <?php endif; ?>
           </div>
         </a>

@@ -6,9 +6,10 @@
 
   <div class="page">
     <format-text>
-      <h1><?= $page['title']; ?></h1>
+      <h1><?= $page_title; ?></h1>
 
       <?= $story; ?>
+
     </format-text>
   </div>
 </main>

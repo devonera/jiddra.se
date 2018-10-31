@@ -1,59 +1,23 @@
 <?php
 return function($component, $matches) {
-  /*$children = children('companies');
-  $children = array_slice($children, 0, 5);
+  $page = 'home';
 
-  $children = [
-    path::fromUri('companies/vivus'),
-    path::fromUri('companies/ferratum'),
-    path::fromUri('companies/natlan'),
-    path::fromUri('companies/meddelandelan'),
-    path::fromUri('companies/loanstep'),
-  ];
+  $collector = data::set('collector/lan-home', $page);
+  $format = format::set('LanMultiple', $collector);
+  $filtered = filtered::set('LanMultiple', $format['lan'], $page);
 
-  $kreditkonto = data::set($children, [
-    'kreditkonto/item.csv' => 'kreditkonto-item',
-    'kreditkonto/kostnader.csv' => 'kreditkonto-kostnader',
-  ]);
+  $current = array_values($format['current'])[0];
+  $kategorier = array_values($format['kategorier']);
 
-  $snabblan = data::set($children, [
-    'snabblan/item.csv' => 'snabblan-item',
-    'snabblan/kostnader.csv' => 'snabblan-kostnader',
-  ]);
-
-  $page_data = filter(data::set(path::fromUri('home'), [
-    'home.txt' => 'page',
-  ]));
-
-  $company = data::set($children, [
-    'company.txt' => 'page',
-  ]);
-
-  if(!empty($kreditkonto)) $services['kreditkonto'] = $kreditkonto;
-  if(!empty($snabblan)) $services['snabblan'] = $snabblan;
-
-  $merged = [];
-
-  foreach($children as $child) {
-    if(isset($services)) {
-      foreach($services as $type => $pages) {
-        if(isset($pages[$child])) {
-          $merged[$child][$type] = filter($pages[$child]);
-        }
-      }
-    }
-    $merged[$child]['page'] = $company[$child]['page'];
-  }
-
-  $data['children'] = $merged;
-  $data['headline'] = 'Bästa lånen just nu';
-  $data['page'] = $page_data['page'];
+  $data = $current;
+  $data['categories'] = $kategorier;
+  $data['children'] = $format['lan'];
+  $data['filtered'] = $filtered;
+  $data['page'] = $page;
+  $data['headline'] = 'Bästa lånen just nu'; // FRÅN fil
+  $data['route'] = '--home';
 
   #print_r($data);
-  #die;
 
-  return $data;*/
-
-  $callback = include __DIR__ . '/../--article/controller.php';
-  return $callback($component, $matches, 'home');
+  return $data;
 };

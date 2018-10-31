@@ -31,6 +31,15 @@ Enligt [Aftonbladet](https://www.aftonbladet.se/minekonomi/a/J1AXA7/stopp-for-sv
 3. Marknadsföringen ska vara måttfull. Man ska alltså ge korrekt information och inte överdriva fördelarna.
 ');
 ?>
+
+    <h2>Kategorier</h2>
+    <ul>
+    <?php foreach($categories as $item): ?>
+      <li>
+        <a href="<?= $item['slug']; ?>"><?= $item['title']; ?></a>
+      </li>
+    <?php endforeach; ?>
+    </ul>
     </format-text>
   </div>
 </main>

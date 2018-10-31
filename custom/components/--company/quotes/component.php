@@ -1,9 +1,9 @@
-<?php if($data['quotes']) : ?>
+<?php if($quotes) : ?>
   <div class="block">
     <h2>Kunder säger</h2>
     <div class="quotes">
       <?php $number = null; ?>
-      <?php foreach($data['quotes'] as $item) : ?>
+      <?php foreach($quotes as $item) : ?>
         <?php
         $num = numberout($item[1]);
         $number = ($number == $num) ? $num + 1 : $num;
