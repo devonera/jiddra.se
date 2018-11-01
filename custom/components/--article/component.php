@@ -2,7 +2,21 @@
 <?= component('top'); ?>
 <main>
 
-  <?= component('rows', ['headline' => $headline]); ?>
+  <?php if(!empty($filtered)) : ?>
+    <?= component('rows', ['headline' => $headline]); ?>
+  <?php endif; ?>
+
+  <?php if(isset($itembox)) : ?>
+    <div class="itemboxes">
+      <ul>
+        <?php foreach($itembox as $item) : ?>
+          <li>
+            <?= component('itembox/presets/' . $item); ?>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  <?php endif; ?>
 
   <div class="page">
     <format-text>

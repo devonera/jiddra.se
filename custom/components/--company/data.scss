@@ -48,7 +48,7 @@
       }
 
       a {
-        color: #0074D9;
+        color: var(--color-link);
         text-decoration: none;
 
         &:hover {

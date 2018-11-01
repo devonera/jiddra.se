@@ -5,3 +5,4 @@ page_title: Räntefritt lån
 lantyp: smslan
 rows_headline: Räntefria lån
 rows_collection: rantefritt
+type: rows

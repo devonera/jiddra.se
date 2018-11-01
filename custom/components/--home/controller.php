@@ -17,7 +17,5 @@ return function($component, $matches) {
   $data['headline'] = 'Bästa lånen just nu'; // FRÅN fil
   $data['route'] = '--home';
 
-  #print_r($data);
-
   return $data;
 };

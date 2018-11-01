@@ -43,7 +43,7 @@ main {
     format-text {
       padding: var(--hero-sides);
       padding-top: 2rem;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
 
       @media screen and (min-width: $plarge) {
         padding: 4rem 0;

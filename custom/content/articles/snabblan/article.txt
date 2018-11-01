@@ -4,3 +4,4 @@ seo_description:
 page_title: Snabblån och smslån
 rows_headline: Snabblån
 rows_collection: snabblan
+type: rows

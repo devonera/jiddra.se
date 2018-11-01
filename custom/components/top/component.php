@@ -18,6 +18,7 @@
         <li<?= page::slug() == 'app' ? ' class="active"': ''; ?>><a href="<?= url('app'); ?>">Kunskap</a></li>
         */?>
         <li<?= page::slug() == 'lan' ? ' class="active"': ''; ?>><a href="<?= url('lan'); ?>">Lån</a></li>
+        <li<?= page::slug() == 'kunskap' ? ' class="active"': ''; ?>><a href="<?= url('kunskap'); ?>">Kunskap</a></li>
         
       </ul>
     </div>

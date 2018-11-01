@@ -34,9 +34,9 @@ img {
 
 :root {
   --color-red: #BB0060;
-  --color-gray: #e9f0f6;
-  --color-gray: #65a0d2;
-  --color-gray: #ddd;
+  --color-gray: hsl(210, 15%, 91%);
+  --color-light: hsl(210, 15%, 97%);
+  --color-link: #465bad;
   //--color-red: #7aa529;
   --main-padding: 2rem 1rem;
   --hero-sides: 0 1rem;
@@ -68,14 +68,16 @@ img {
 
 .button {
   background: #006cbb;
-  padding: .75rem 2rem;
+  background: #465bad;
+  background: #bb0060;
+  padding: .5rem 2rem;
   color: #fff;
-  border-radius: 100px;
+  border-radius: .25rem;
   text-decoration: none;
   font-size: 16px;
   display: inline-block;
 
   &:hover {
-    background: darken(#006cbb, 5%);
+    background: darken(#bb0060, 5%);
   }
 }
