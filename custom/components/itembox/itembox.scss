@@ -18,6 +18,13 @@
     text-decoration: none;
     position: relative;
 
+    &:hover {
+
+      .text h3 {
+        text-decoration: underline dotted;
+      }
+    }
+
     &:after {
       background-image: url(../../../components/rows/chevron-right.svg);
       background-repeat: no-repeat;
@@ -25,11 +32,15 @@
       background-size: 24px;
       opacity: .2;
       content: '';
-      display: block;
       height: 24px;
       width: 24px;
       align-self: center;
       padding: 0 2rem;
+      display: none;
+
+      @media screen and (min-width: $medium) {
+        display: block;
+      }
     }
 
     figure {
@@ -56,14 +67,9 @@
         font-size: 1.33rem;
         font-weight: bold;
         margin-bottom: .25rem;
-        font-family: "acumin-pro-condensed";
-
+        color: var(--color-link);
         display: flex;
         align-items: center;
-
-        strong {
-          font-family: "acumin-pro-condensed";
-        }
 
         span {
           background: var(--color-red);

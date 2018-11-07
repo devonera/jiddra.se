@@ -3,7 +3,7 @@
 <main>
 
   <?php if(!empty($filtered)) : ?>
-    <?= component('rows', ['headline' => $headline]); ?>
+    <?= component(option('cpath') . 'rows', ['headline' => $headline]); ?>
   <?php endif; ?>
 
   <?php if(isset($itembox)) : ?>

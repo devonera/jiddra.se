@@ -1,6 +1,6 @@
 <?php
 return function($page) {
-  $meta = children('companies', path::get('root') . '/../meta');
+  $meta = children('companies', path::get('cms') . '/../io-meta');
   return [
     [
       'name' => 'lan',

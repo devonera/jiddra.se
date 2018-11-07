@@ -1,6 +1,7 @@
 <?php
 function thumbScreenshot($page) {
-  $from = sprintf("%s/companies/%s/screenshot.png", path::get('content'), $page);
+  $path_meta = path::get('cms') . '/../io-meta';
+  $from = sprintf("%s/companies/%s/screenshot.png", $path_meta, $page);
   $to = sprintf("%s/content/companies/%s/screenshot.png", path::get('cache'), $page);
   crop($from, $to, 900, 450, 0, 0);
 }

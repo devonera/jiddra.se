@@ -11,7 +11,7 @@
       <li>
         <a href="<?= url(basename($path)); ?>">
           <?php
-          $iconpath = root() . '/../meta/companies/' . basename($path) . '/icon';
+          $iconpath = root() . '/../io-meta/companies/' . basename($path) . '/icon';
           if(file_exists($iconpath . '.svg')) {
             $extension = 'svg';
           } elseif(file_exists($iconpath. '.png')) {

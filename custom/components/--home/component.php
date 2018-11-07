@@ -2,7 +2,7 @@
 <?= component('top'); ?>
 <?php $Parsedown = new Parsedown(); ?>
 <main>
-  <?= component('rows', ['headline' => $headline]); ?>
+  <?= component(option('cpath') . 'rows', ['headline' => $headline]); ?>
 
   <div class="page">
     <format-text>

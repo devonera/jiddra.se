@@ -13,10 +13,17 @@ $plarge: 900px + (8 * 16px);
   margin: 0;
   font-family: "acumin-pro";
   font-family: roboto;
+  font-family: omnes-cond;
 }
 
 html {
   height: 100%;
+
+  $min_width: $medium;
+  $max_width: $xlarge;
+  $min_font: 16px;
+  $max_font: 21px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
 body {
@@ -36,8 +43,8 @@ img {
   --color-red: #BB0060;
   --color-gray: hsl(210, 15%, 91%);
   --color-light: hsl(210, 15%, 97%);
-  --color-link: #465bad;
-  //--color-red: #7aa529;
+  --color-link: hsl(228, 42%, 48%);
+  --color-link-light: hsl(228, 42%, 80%);
   --main-padding: 2rem 1rem;
   --hero-sides: 0 1rem;
   --hero-outside: 0;
@@ -63,18 +70,17 @@ img {
 
   @media screen and (min-width: $xlarge) {
     --main-padding: 4rem;
+    font-size: 21px;
   }
 }
 
 .button {
-  background: #006cbb;
-  background: #465bad;
   background: #bb0060;
   padding: .5rem 2rem;
   color: #fff;
   border-radius: .25rem;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   display: inline-block;
 
   &:hover {

@@ -7,7 +7,9 @@ var minifyJS = require('gulp-minify');
 // Core CSS
 gulp.task('css', function() {
   return gulp.src([
+    '../../io-components/mixins/*.scss',
     'custom/components/global/*.scss',
+    '../../io-components/**/*.scss',
     'custom/components/**/*.scss'
     ])
     .pipe(concat('style.min.scss'))
@@ -29,5 +31,6 @@ gulp.task('js', function() {
 // Default
 gulp.task('default', function() {
     gulp.watch('custom/components/**/*.scss', ['css']);
+    gulp.watch('../../io-components/**/*.scss', ['css']);
     gulp.watch('custom/components/**/*.js',   ['js' ]);
 });

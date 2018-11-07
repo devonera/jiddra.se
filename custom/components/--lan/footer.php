@@ -13,17 +13,15 @@ for(i = 0; i< rangesliders.length; i++) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function(){
-  data.init();
+  data.init('<?= url(); ?>');
   var tabs = tabbis.init({
     tabGroup: '[data-tabs]',
     paneGroup: '[data-panes]',
     tabActive: 'active',
     paneActive: 'active',
     callback: function(tab, pane) {
-      console.log(tab);
-      console.log(pane);
       data.reset();
-      data.init();
+      data.init('<?= url(); ?>');
     }
   });
 });

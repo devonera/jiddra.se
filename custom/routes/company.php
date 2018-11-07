@@ -1,5 +1,5 @@
 <?php
-$childpath = path::get('root') . '/../meta';
+$childpath = path::get('cms') . '/../io-meta';
 
 $regex = '(';
 foreach(children('companies', $childpath) as $child) {

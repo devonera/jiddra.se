@@ -1,2 +1,2 @@
 <?php
-route('lan', '--app');
+route('lan', '--lan');

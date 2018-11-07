@@ -1,144 +1,90 @@
-$min_width: 320px;
-$max_width: 900px;
-$min_font: 15px;
-$max_font: 17.4px;
-
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
-
-@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
-    }
-  }
-}
-
 format-text {
     display: block;
-    //font-size: calc(14px + (17 - 14) * ((100vw - 800px) / (1040 - 800)));
-    //font-size: 17.4px;
 
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
-    .button {
-        margin-bottom: 2em;
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: omnes-narrow;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 1rem;
+        color: #000;
+        word-break: break-word;
+        line-height: 1.2;
     }
 
-  h1 {
-      font-size: 3.5em;
-      text-transform: uppercase;
-      line-height: .9;
-      letter-spacing: -.015em;
-      color: #222;
+    h1 {
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    font-size: 3rem;
+    color: #222;
+    }
 
-      &:after {
-        border-bottom: 5px solid var(--color-red);
-        width: 2em;
-        display: block;
-        font-size: calc(3rem - 5px);
-        font-family: acumin-pro-condensed;
-        content: "\00a0";
-      }
-  }
+    h2 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
 
-  h2 {
-    font-size: 2em;
-    //text-transform: uppercase;
-    font-weight: normal !important;
-  }
+    h3 {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
 
-  h3 {
-      font-weight: normal !important;
-      font-size: 1.5em;
-  }
+    h4 {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-      font-family: "roboto condensed";
-      font-family: "acumin-pro-condensed";
-      //font-family: "acumin-pro-extra-condensed";
-      font-weight: bold;
-      display: block;
-      margin-bottom: 1em;
-      color: #000;
+    a {
+        color: var(--color-link);
+        text-decoration: underline;
+        text-decoration-color: var(--color-link-light);
+        word-break: break-all;
 
-      /*padding-top: calc(4rem + 1em);
-      margin-top: calc(-4rem - 1em);*/
+        &:hover {
+            text-decoration-color: var(--color-link);
+        }
+    }
 
-      /*@media screen and (max-width: 65rem) {
-          padding-top: calc(3.5rem + 1em);
-          margin-top: calc(-3.5rem - 1em);
-      }*/
-  }
+    ol,ul {
+        padding-left: 1.5rem;
+    }
 
-  h1 {
-    font-family: "acumin-pro-extra-condensed";
-    margin-bottom: .5em;
-  }
+    p,
+    ol,
+    ul,
+    blockquote {
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        color: #333;
+    }
 
-  h4 {
-      text-transform: uppercase;
-      font-size: 1em;
-  }
+    code {
+        
+        background: var(--color-gray);
+        font-family: roboto;
+    }
 
-  a {
-    color: var(--color-link);
-      text-decoration: underline;
-  }
-
-  ol,ul {
-      padding-left: 25px;
-  }
-
-  p,
-  ol,
-  ul,
-  blockquote {
-      line-height: 1.7;
-      margin-bottom: 2em;
-      color: #333;
-  }
-
-  code {
-      
-      background: var(--color-gray);
-      font-family: roboto;
-  }
-
-  blockquote {
+    blockquote {
     background: var(--color-gray);
-      padding: 1em;
-      border-left: .5em solid #ddd;
+        padding: 1em;
+        border-left: .5rem solid #ddd;
 
-      >*:last-child {
-          margin-bottom: 0;
-      }
-  }
+        >*:last-child {
+            margin-bottom: 0;
+        }
+    }
 
-  img {
-      margin-bottom: 2rem;
-      display: block;
-      max-width: 100%;
-      max-height: 20rem;
-      height: auto;
-  }
+    img {
+        margin-bottom: 2rem;
+        display: block;
+        max-width: 100%;
+        max-height: 20rem;
+        height: auto;
+    }
 
-  >*:last-child {
-      margin-bottom: 0;
-  }
+    >*:last-child {
+        margin-bottom: 0;
+    }
 } //

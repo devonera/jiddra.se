@@ -1,7 +1,8 @@
 var data = (function () {
   var fn = {};
 
-  fn.init = function() {
+  fn.init = function(root) {
+    fn.root = root;
     fn.collection = {};
     fn.selectors();
 
@@ -44,7 +45,9 @@ var data = (function () {
   fn.ajax = function() {
     var json = JSON.stringify(fn.collection);
 
-    fetch('http://localhost/io/sites/jiddra.se/api', {
+    console.log(fn.root);
+
+    fetch(fn.root + '/api', {
       method: 'POST',
       body: json,
       headers: {
@@ -53,8 +56,9 @@ var data = (function () {
     }).then(function(response) {
       return response.text();
     }).then(function(text) { 
-      console.log(text);
+      //console.log(text);
       document.querySelector('.results').innerHTML = text;
+      window.initEasyToggleState();
     });
   };
 

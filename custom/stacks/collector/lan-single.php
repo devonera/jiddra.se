@@ -3,7 +3,7 @@ return function($page) {
   return [
     [
       'name' => 'current',
-      'paths' => path::get('root') . '/../meta/companies/' . $page,
+      'paths' => path::get('cms') . '/../io-meta/companies/' . $page,
       'files' => [
         'company.txt',
         'kontakt.csv',

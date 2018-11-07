@@ -48,7 +48,7 @@
         <div class="selectboxes">
           <div class="selectbox">
             <select id="bank" name="bank">
-              <option value="" selected>-- Direktutbetalning bank --</option>
+              <option value="" selected>- Direktutbetalning bank -</option>
               <option value="danskebank">Danskebank</option>
               <option value="handelsbanken">Handelsbanken</option>
               <option value="nordea">Nordea</option>
@@ -59,7 +59,7 @@
 
           <div class="selectbox">
             <select id="type" name="type">
-              <option value="" selected>-- Låntyp --</option>
+              <option value="" selected>- Låntyp -</option>
               <option value="snabblan">Snabblån</option>
               <option value="privatlan">Privatlån</option>
               <option value="kreditkonto">Kreditkonto</option>          

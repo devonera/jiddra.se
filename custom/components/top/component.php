@@ -6,7 +6,7 @@
   <div class="bar">
     <div class="logo">
         <a href="<?= url(); ?>">
-          <img src="<?= url('assets/components/top/logo-white.svg'); ?>" width="200">
+            jiddra
         </a>
     </div>
     <div class="menu">
