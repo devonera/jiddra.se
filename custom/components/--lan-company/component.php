@@ -1,5 +1,5 @@
-<?= component('header'); ?>
-<?= component('top'); ?>
+<?= component(option('cpath') . 'header'); ?>
+<?= component(option('cpath') . 'top'); ?>
 
 <main>
   <div class="hero">
@@ -79,4 +79,4 @@
     </div>
   <?php endif; ?>
 </main>
-<?= component('footer'); ?>
+<?= component(option('cpath') . 'footer'); ?>

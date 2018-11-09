@@ -1,9 +1,9 @@
-<?= component('header'); ?>
-<?= component('top'); ?>
+<?= component(option('cpath') . 'header'); ?>
+<?= component(option('cpath') . 'top'); ?>
 <main>
 
   <?php if(!empty($filtered)) : ?>
-    <?= component(option('cpath') . 'rows', ['headline' => $headline]); ?>
+    <?= component(option('cpath') . 'lan-rows', ['headline' => $rows_headline]); ?>
   <?php endif; ?>
 
   <?php if(isset($itembox)) : ?>
@@ -27,4 +27,4 @@
     </format-text>
   </div>
 </main>
-<?= component('footer'); ?>
+<?= component(option('cpath') . 'footer'); ?>

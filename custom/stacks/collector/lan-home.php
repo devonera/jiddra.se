@@ -1,6 +1,6 @@
 <?php
 return function($page) {
-  $meta = children('companies', path::get('cms') . '/../io-meta');
+  $meta = children('companies', path::get('cms') . '/../io-shared/meta');
   return [
     [
       'name' => 'lan',

@@ -7,7 +7,8 @@ return [
       'label' => 'Upplysningsbolag',
       'type' => 'sentence',
       'replacements' => [
-        'creditsafe' => 'Creditsafe'
+        'creditsafe' => 'Creditsafe',
+        'bisnode' => 'Bisnode'
       ]
     ],
     /*'uc' => [
@@ -20,9 +21,10 @@ return [
       'type' => 'sentence',
       'label' => 'Identifiering',
       'replacements' => [
-        'bankid' => 'BankID',
-        'e-leg' => 'E-leg',
-        'telefon' => 'Telefon'
+        'bankid' => 'bankID',
+        'e-leg' => 'e-leg',
+        'telefon' => 'telefon',
+        'id-handling' => 'ID-handling'
       ]
     ],
     'direktutbetalning_banker' => [
@@ -32,7 +34,8 @@ return [
         'nordea' => 'Nordea',
         'handelsbanken' => 'Handelsbanken',
         'seb' => 'SEB',
-        'danskebank' => 'Danskebank'
+        'danskebank' => 'Danskebank',
+        'swedbank' => 'Swedbank'
       ]
     ],
     'direktutbetalning' => [

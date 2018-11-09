@@ -1,1 +1,0 @@
-<?= component(option('cpath') . 'rows', ['headline' => $headline]); ?>

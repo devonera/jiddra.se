@@ -1,2 +1,0 @@
-<?php
-route('api', '--api');

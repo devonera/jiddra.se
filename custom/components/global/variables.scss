@@ -1,0 +1,48 @@
+$small: 320px;
+$medium: 480px;
+$default: 640px;
+$large: 900px;
+$xlarge: 1140px;
+
+$plarge: 900px + (8 * 16px);
+
+////http://www.color-hex.com/color/778899
+
+:root {
+  --blue: hsl(228, 42%, 48%);
+  --blue-dark: hsl(228, 42%, 40%);
+
+  --color-top: var(--blue);
+  --color-top-item: hsl(228, 42%, 55%);
+  --color-top-hover: hsl(228, 42%, 60%);
+  --color-top-active: var(--blue-dark);
+
+  --color-range-handle: #BB0060;
+
+  --color-button-action: #BB0060;
+  --color-button-affiliate: var(--blue);
+  --color-button-affiliate-hover: var(--blue-dark);
+
+  --color-tabs: var(--color-top-item);
+  --color-gray: hsl(210, 15%, 91%);
+  --color-light: hsl(210, 15%, 97%);
+
+  --color-link: var(--blue);
+  --color-link-light: hsl(228, 42%, 80%);
+  --color-link-dark: hsl(228, 42%, 30%);
+
+  --hero-sides: 0 1rem;
+  --hero-outside: 0;
+
+  @media screen and (min-width: $medium) {
+    --hero-sides: 0 2rem;
+  }
+
+  @media screen and (min-width: $default) {
+    --hero-sides: 0 2rem;
+  }
+
+  @media screen and (min-width: $large) {
+    --hero-sides: 0 4rem;
+  }
+}

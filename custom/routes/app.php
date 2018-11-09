@@ -1,2 +1,0 @@
-<?php
-route('lan', '--lan');

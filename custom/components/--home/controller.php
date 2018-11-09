@@ -14,7 +14,6 @@ return function($component, $matches) {
   $data['children'] = $format['lan'];
   $data['filtered'] = $filtered;
   $data['page'] = $page;
-  $data['headline'] = 'Bästa lånen just nu'; // FRÅN fil
   $data['route'] = '--home';
 
   return $data;
