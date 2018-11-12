@@ -1,0 +1,6 @@
+title: Ferratum
+seo_title: Ferratum - Låna 30 000 kr räntefritt i 30 dagar
+seo_description: Om du vill slippa ränta och andra kostnader så kan du låna räntefritt hos Ferratum.
+affiliate_url: https://track.adtraction.com/t/t?a=679911485&as=1264789459&t=2&tk=1
+hero: ferratum.jpg
+site_url: https://www.ferratum.se

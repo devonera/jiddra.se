@@ -22,7 +22,7 @@ return function($component, $matches) {
       $Parsedown = new Parsedown();
       $data['story'] = $Parsedown->text(file_get_contents(path::get('content') . '/articles/' . $page . '/story.md'));
       $data['itembox'] = ['lan'];
-      $childpath = path::get('root') . '/../io-shared/meta';
+      $childpath = path::get('meta');
       $data['count'] = count(children('companies', $childpath));
     }
   }

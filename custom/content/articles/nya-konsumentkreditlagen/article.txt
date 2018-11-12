@@ -1,0 +1,6 @@
+title: Nya konsumentkreditlagen
+seo_title: Nya konsumentkreditlagen
+seo_description: 
+page_title: Nya konsumentkreditlagen
+type: tool
+rows_headline: hallo

@@ -13,7 +13,7 @@
         <?php if(!empty($item[1])) : ?>
           <div class="quote">
             <figure>
-              <img src="<?= url('assets/components/--company/avatars/' . $number . '.svg'); ?>">
+              <img src="<?= url('assets/components/--lan-company/avatars/' . $number . '.svg'); ?>">
             </figure>
             <blockquote>
               <p><?= $item[0]; ?></p>

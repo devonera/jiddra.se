@@ -11,15 +11,18 @@ $plarge: 900px + (8 * 16px);
 :root {
   --blue: hsl(228, 42%, 48%);
   --blue-dark: hsl(228, 42%, 40%);
+  --pink: hsl(329, 100%, 37%);
 
   --color-top: var(--blue);
   --color-top-item: hsl(228, 42%, 55%);
   --color-top-hover: hsl(228, 42%, 60%);
   --color-top-active: var(--blue-dark);
 
-  --color-range-handle: #BB0060;
+  --color-counter: var(--pink);
 
-  --color-button-action: #BB0060;
+  --color-range-handle: var(--pink);
+
+  --color-button-action: var(--pink);
   --color-button-affiliate: var(--blue);
   --color-button-affiliate-hover: var(--blue-dark);
 

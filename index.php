@@ -6,7 +6,8 @@ $root = $_SERVER["REMOTE_ADDR"] == '::1' ? 'http://localhost/io/public_html/jidd
 setPaths([
   'root' => __DIR__,
   'custom' => __DIR__ . '/custom',
-  'plugins' => __DIR__ . '/../../io-shared/plugins'
+  'plugins' => __DIR__ . '/../../io-shared/plugins',
+  'meta' => __DIR__ . '/custom/meta'
 ]);
 
 setUrls([

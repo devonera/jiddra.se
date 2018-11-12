@@ -25,10 +25,10 @@
                 <h2 class="service-title"><?= $item['title']; ?></h2>
                 <section class="columns">
                   <?php if(isset($item['files']['item']['data'])) : ?>
-                    <?= component('--company/block', ['items' => $item['files']['item']['data'], 'heading' => $item['files']['item']['title']]); ?>  
+                    <?= component('--lan-company/block', ['items' => $item['files']['item']['data'], 'heading' => $item['files']['item']['title']]); ?>  
                   <?php endif; ?>
                   <?php if(isset($item['files']['kostnader']['data'])) : ?>
-                    <?= component('--company/list', ['items' => $item['files']['kostnader']['data']['kostnader']['nice'], 'block_title' => $item['files']['kostnader']['title']]); ?>
+                    <?= component('--lan-company/list', ['items' => $item['files']['kostnader']['data']['kostnader']['nice'], 'block_title' => $item['files']['kostnader']['title']]); ?>
                   <?php endif; ?>
                 </section>
               <?php endif; ?>
@@ -39,25 +39,25 @@
 
           <?php if($info || $krav) : ?>
             <section class="columns">
-              <?= component('--company/block',['items' => $info, 'heading' => 'Information']); ?>
-              <?= component('--company/block',['items' => $krav, 'heading' => 'Krav']); ?>
+              <?= component('--lan-company/block',['items' => $info, 'heading' => 'Information']); ?>
+              <?= component('--lan-company/block',['items' => $krav, 'heading' => 'Krav']); ?>
             </section>
           <?php endif; ?>
 
           <section>
-            <?= component('--company/quotes'); ?>
+            <?= component('--lan-company/quotes'); ?>
           </section>
 
           <?php if($service || $kontakt) : ?>
             <section class="columns">
-              <?= component('--company/block',['items' => $service, 'heading' => 'Företaget']); ?>
-              <?= component('--company/block',['items' => $kontakt, 'heading' => 'Kontakt' ]); ?>
+              <?= component('--lan-company/block',['items' => $service, 'heading' => 'Företaget']); ?>
+              <?= component('--lan-company/block',['items' => $kontakt, 'heading' => 'Kontakt' ]); ?>
             </section>
           <?php endif; ?>
 
           <?php if($weekdays['oppettider']['nice']) : ?>
             <section class="columns">
-              <?= component('--company/list', ['items' => $weekdays['oppettider']['nice'], 'block_title' => 'Öppettider']); ?>
+              <?= component('--lan-company/list', ['items' => $weekdays['oppettider']['nice'], 'block_title' => 'Öppettider']); ?>
             </section>
           <?php endif; ?>
           <section>

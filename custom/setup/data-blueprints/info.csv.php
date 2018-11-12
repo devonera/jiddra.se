@@ -8,7 +8,8 @@ return [
       'type' => 'sentence',
       'replacements' => [
         'creditsafe' => 'Creditsafe',
-        'bisnode' => 'Bisnode'
+        'bisnode' => 'Bisnode',
+        'uc' => 'UC'
       ]
     ],
     /*'uc' => [

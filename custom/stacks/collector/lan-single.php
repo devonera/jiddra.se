@@ -3,7 +3,7 @@ return function($page) {
   return [
     [
       'name' => 'current',
-      'paths' => path::get('cms') . '/../io-shared/meta/companies/' . $page,
+      'paths' => path::get('meta') . '/companies/' . $page,
       'files' => [
         'company.txt',
         'kontakt.csv',

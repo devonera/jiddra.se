@@ -2,22 +2,30 @@
 <?= component(option('cpath') . 'top'); ?>
 <?php $Parsedown = new Parsedown(); ?>
 <main>
-  <?= component(option('cpath') . 'lan-rows', ['headline' => $rows_headline]); ?>
+<div class="itemboxes">
+  <ul>
+    <li>
+      <?= component('itembox/presets/lan', ['count' => 3]); ?>
+    </li>
+  </ul>
+</div>
+  <?php # component(option('cpath') . 'lan-rows', ['headline' => $rows_headline]); ?>
 
   <div class="page">
     <format-text>
+      
+
+    <h2>Artiklar</h2>
+      <ul>
+        <?php foreach($categories as $item): ?>
+          <li>
+            <a href="<?= $item['slug']; ?>"><?= $item['title']; ?></a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
       <h1><?= $title; ?></h1>
-
       <?= $story; ?>
-
-    <h2>Kategorier</h2>
-    <ul>
-    <?php foreach($categories as $item): ?>
-      <li>
-        <a href="<?= $item['slug']; ?>"><?= $item['title']; ?></a>
-      </li>
-    <?php endforeach; ?>
-    </ul>
     </format-text>
   </div>
 </main>
