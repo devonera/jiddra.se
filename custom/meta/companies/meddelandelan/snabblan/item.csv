@@ -6,3 +6,5 @@ befintlig_kund_belopp_max,30000
 gratis_belopp_min,1000
 gratis_belopp_max,1000
 gratis_max_loptid,30
+loptid_min,1
+loptid_max,36

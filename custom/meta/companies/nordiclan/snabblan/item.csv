@@ -1,0 +1,7 @@
+Key,Value
+ny_kund_belopp_min,10000
+ny_kund_belopp_max,30000
+befintlig_kund_belopp_min,10000
+befintlig_kund_belopp_max,30000
+loptid_min,12
+loptid_max,60

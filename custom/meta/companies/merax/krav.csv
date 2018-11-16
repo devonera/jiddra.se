@@ -1,5 +1,5 @@
 Key,Value
-alder_min,
+alder_min,18
 alder_max,
-inkomstkrav,
-betalningsanm_accepteras,
+inkomstkrav,200000
+betalningsanm_accepteras,true

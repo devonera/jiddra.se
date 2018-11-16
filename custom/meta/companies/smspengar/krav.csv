@@ -1,5 +1,5 @@
 Key,Value
-alder_min,
-alder_max,
-inkomstkrav,
-betalningsanm_accepteras,
+alder_min,18
+alder_max,72
+inkomstkrav,Deklarerad inkomst
+betalningsanm_accepteras,false

@@ -24,7 +24,7 @@ function slug($string) {
   );
 }
 
-function services($uri = 'companies/vivus') {
+/*function services($uri = 'companies/vivus') {
   $folder_uri = path::get('content') . '/' . $uri;
 
   $services = [
@@ -82,4 +82,4 @@ function services($uri = 'companies/vivus') {
   }
 
   return $data;
-}
+}*/

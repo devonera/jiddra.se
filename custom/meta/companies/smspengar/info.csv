@@ -1,4 +1,4 @@
 Key,Value
-upplysningsbolag,
-identifiering,
-direktutbetalning_banker,
+upplysningsbolag,creditsafe
+identifiering,"bankid,id-handling"
+direktutbetalning_banker,"handelsbanken,nordea"

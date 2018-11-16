@@ -1,4 +1,4 @@
 Key,Value
-upplysningsbolag,
-identifiering,
-direktutbetalning_banker,
+upplysningsbolag,bisnode
+identifiering,bankid
+direktutbetalning_banker,"swedbank,handelsbanken,seb,danskebank,nordea"

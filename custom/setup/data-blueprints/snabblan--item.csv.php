@@ -25,6 +25,17 @@ return [
       'label' => 'Belopp befintlig kund',
       'suffix' => 'kr'
     ],
+    'loptid_min' => [
+      'type' => 'integer',
+    ],
+    'loptid_max' => [
+      'type' => 'integer',
+    ],
+    'loptid' => [
+      'type' => 'interval',
+      'label' => 'Löptid',
+      'suffix' => 'mån'
+    ],
     'gratis_max_loptid' => [
       'type' => 'integer',
     ],

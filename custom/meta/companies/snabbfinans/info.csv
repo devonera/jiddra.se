@@ -1,4 +1,4 @@
 Key,Value
-upplysningsbolag,
-identifiering,
-direktutbetalning_banker,
+upplysningsbolag,bisnode
+identifiering,"instantor,nordea,verifikationskod"
+direktutbetalning_banker,seb

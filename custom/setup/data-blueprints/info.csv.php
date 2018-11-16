@@ -9,7 +9,9 @@ return [
       'replacements' => [
         'creditsafe' => 'Creditsafe',
         'bisnode' => 'Bisnode',
-        'uc' => 'UC'
+        'uc' => 'UC',
+        'instantor' => 'Instantor',
+        'decidas' => 'Decidas'
       ]
     ],
     /*'uc' => [
@@ -25,7 +27,10 @@ return [
         'bankid' => 'bankID',
         'e-leg' => 'e-leg',
         'telefon' => 'telefon',
-        'id-handling' => 'ID-handling'
+        'id-handling' => 'ID-handling',
+        'instantor' => 'Instantor',
+        'verifikationskod' => 'Verifikationskod',
+        'nordea' => 'Nordea'
       ]
     ],
     'direktutbetalning_banker' => [
