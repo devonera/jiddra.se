@@ -1,0 +1,5 @@
+seo_title: Ta dig ur skuldfällan (15 tips)
+seo_description: Har du hamnat i skuldfällan? Kanske känner du någon som befinner sig där? Här kommer räddningen. Jag går igenom flera åtgärder du kan göra för att rädda situationen.
+page_title: Ta dig ur skuldfällan (15 tips)
+menu_title: Ta dig ur skuldfällan (15 tips)
+type: tool

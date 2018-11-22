@@ -28,7 +28,7 @@
   }
   blockquote {
     padding: 1rem;
-    padding-left: 0;
+    padding-left: 0 !important;
     flex: 1;
 
     @media screen and (min-width: $large) {

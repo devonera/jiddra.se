@@ -76,7 +76,13 @@
         <h1><?= $title; ?></h1>  
         <?= $story; ?>
       </format-text>
+
+      <?php if(!server::isLocalhost()) : ?>
+        <?= component(option('cpath') . 'disqus'); ?>
+      <?php endif; ?>
     </div>
   <?php endif; ?>
 </main>
+
+<script id="dsq-count-scr" src="//jiddra.disqus.com/count.js" async></script>
 <?= component(option('cpath') . 'footer'); ?>

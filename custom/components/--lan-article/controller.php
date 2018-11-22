@@ -16,14 +16,12 @@ return function($component, $matches) {
       $data = $current;
       $data['children'] = $format['lan'];
       $data['filtered'] = $filtered;
-      //$data['headline'] = 'Relevanta lån'; // FRÅN fil
     } else {
       $data = $content;
       $Parsedown = new Parsedown();
       $data['story'] = $Parsedown->text(file_get_contents(path::get('content') . '/articles/' . $page . '/story.md'));
       $data['itembox'] = ['lan'];
       $childpath = path::get('meta');
-      $data['count'] = count(children('companies', $childpath));
     }
   }
 

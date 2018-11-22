@@ -2,6 +2,7 @@ title: Snabblån
 seo_title: Snabblån &amp; smslån
 seo_description: 
 page_title: Snabblån och smslån
+menu_title: Snabblån
 rows_headline: Snabblån
 rows_collection: snabblan
 type: rows

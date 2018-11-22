@@ -1,0 +1,5 @@
+seo_title: Då bör du låna - och då bör du avstå
+seo_description: 
+page_title: Låna eller inte låna?
+menu_title: Låna eller inte låna?
+type: tool

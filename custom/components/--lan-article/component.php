@@ -1,7 +1,6 @@
 <?= component(option('cpath') . 'header'); ?>
 <?= component(option('cpath') . 'top'); ?>
 <main>
-
   <?php if(!empty($filtered)) : ?>
     <?= component(option('cpath') . 'lan-rows', ['headline' => $rows_headline]); ?>
   <?php endif; ?>
@@ -21,10 +20,14 @@
   <div class="page">
     <format-text>
       <h1><?= $page_title; ?></h1>
-
       <?= $story; ?>
-
     </format-text>
+
+    <?php if(!server::isLocalhost()) : ?>
+      <?= component(option('cpath') . 'disqus'); ?>
+    <?php endif; ?>
   </div>
 </main>
+
+<script id="dsq-count-scr" src="//jiddra.disqus.com/count.js" async></script>
 <?= component(option('cpath') . 'footer'); ?>
