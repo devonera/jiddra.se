@@ -1,4 +1,4 @@
-![](articles/ta-dig-ur-skuldfallan/being-alone-513526_1920.jpg)
+![](being-alone-513526_1920.jpg)
 
 Har du hamnat i skuldfällan? Kanske känner du någon som befinner sig där?
 
@@ -14,7 +14,7 @@ Kanske har du många smslån eller andra dyra blancolån. Då kan det vara på t
 
 Förutom räntan bör du även jämföra de andra kostnader som finns kring lånet du tänkt ta. Det kan vara så att de lägger på ansökningsavgift, aviavgifter, årsavgifter och uttagsavgifter. Om man inte vill räkna själv hur mycket det kostar så kan man istället jämföra den effektiva räntan.
 
-![](articles/ta-dig-ur-skuldfallan/money.jpg)
+![](money.jpg)
 
 ### Håll nere antalet lån
 
@@ -26,7 +26,7 @@ Det är också mycket svårare att få en överblick över hur mycket varje lån
 
 ## Samla lån - Sänk räntan
 
-![](articles/ta-dig-ur-skuldfallan/gui-2311261_1280.png)
+![](gui-2311261_1280.png)
 
 Det finns flera företag som har tjänsten "samla lån" eller hopbakslån som det också kallas. Det knyter ann till det jag skrev om i stycket ovan, att försöka undvika att ha alltför många lån med för många långivare.
 
@@ -38,7 +38,7 @@ Det man gör är att man tar ytterligare ett lån hos ett företag som arbetar j
 
 Hela ditt hem är antagligen fullt med saker. Behöver du allt? Många gånger köper man på sig mycket grejer som man sedan aldrig använder, eller tröttnar på. Man kan sälja på Blocket, Tradera, Facebook-grupper, loppis, auktioner eller hos firmor som köper och säljer begagnade grejer.
 
-![](articles/ta-dig-ur-skuldfallan/flea-market-343123_1920.jpg)
+![](flea-market-343123_1920.jpg)
 
 ### Dyra prylar
 
@@ -64,7 +64,7 @@ Chips, ostbågar och läsk är gott, men det tillför inte kroppen någon närin
 
 Att äta ute kostar oftast minst dubbelt så mycket som att laga maten själv. Om du äter ute mycket så finns här stora besparingar som kan göras. Om du dessutom kan hoppa över fika på stan och ölen på krogen så går det ännu bättre. Dessutom är det bättre för hälsan.
 
-![](articles/ta-dig-ur-skuldfallan/pizza-3303388_1920.jpg)
+![](pizza-3303388_1920.jpg)
 
 ### Res inte om pengar saknas
 
@@ -90,13 +90,13 @@ Många företag vill ge rabatt om man väljer att delbetala, men man bör ändå
 
 Ta upp huvudet ur sanden. Dyk ner i högen av utgifter och ta reda på vad det är som kostar. Om du inte vet vad som kostar så är det väldigt svårt att göra någonting åt det. Det kan bli att du gissar på vad du tror kostar och därför drar in på fel saker. Det kan också vara så att ditt undermedvetna lurar dig.
 
-![](articles/ta-dig-ur-skuldfallan/credit-card-1583534_1920.jpg)
+![](credit-card-1583534_1920.jpg)
 
 Ta ett bankutdrag på ett år och kategorisera upp alla kostnader. Även om det tar hela lördagen så kan det vara värt det. Efter en sådan genomgång så har du stenkoll på din ekonomi efteråt.
 
 ## Öka inkomsterna
 
-![](articles/ta-dig-ur-skuldfallan/money-2696219_1920.jpg)
+![](money-2696219_1920.jpg)
 
 I vissa fall kan det vara så att man inte spenderar så mycket och då finns det inte så mycket att spara in på heller. Då kan det istället bero på att du eller din partner har för låg inkomst.
 
@@ -114,7 +114,7 @@ Nuförtiden tar butikerna betalt för platskassar. Några kronor verkar inte så
 
 ## Ansök om skuldsanering
 
-![](articles/ta-dig-ur-skuldfallan/engagement-1718244_1920.jpg)
+![](engagement-1718244_1920.jpg)
 
 Som en sista utväg kan man söka om skuldsanering, men det bör du bara göra om alla andra alternativ är förbrukade. Om det blir beviljat får du leva på existensminimum i 5 år och därefter blir du skuldfri. Under den tiden måste du göra allt för att betala av dina skulder. För att ansökan ska gå igenom måste du också kunna påvisa att du verkligen har försökt att betala av skulderna du har, speciellt den senaste tiden. Annars kan du få avslag.
 

@@ -13,8 +13,9 @@ options::set([
   ],
   'topmenu' => [
     'lan' => 'Lån',
-    'kunskap' => 'Artiklar'
+    'artiklar' => 'Artiklar'
   ],
+  'disqus' => 'jiddra.disqus.com',
   'lan-company-count' => count($meta),
   'drawer' => [
     'lan' => 'Lån och krediter'

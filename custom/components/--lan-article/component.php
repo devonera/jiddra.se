@@ -10,7 +10,7 @@
       <ul>
         <?php foreach($itembox as $item) : ?>
           <li>
-            <?= component('itembox/presets/' . $item); ?>
+            <?= component('itembox/presets/' . $item, ['count' => option('lan-company-count')]); ?>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -29,5 +29,8 @@
   </div>
 </main>
 
+<?php /*
 <script id="dsq-count-scr" src="//jiddra.disqus.com/count.js" async></script>
+*/
+?>
 <?= component(option('cpath') . 'footer'); ?>

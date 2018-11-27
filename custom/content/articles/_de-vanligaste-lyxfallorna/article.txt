@@ -1,3 +1,0 @@
-page_title: De 17 vanligaste lyxfällorna
-menu_title: De 17 vanligaste lyxfällorna
-type: tool

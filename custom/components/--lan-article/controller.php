@@ -2,6 +2,8 @@
 return function($component, $matches) {
   $page = page();
 
+  option::set('content-parent', 'articles');
+
   $Parsedown = new Parsedown();
   $content = Spyc::YAMLLoad(path::get('content') . '/articles/' . $page . '/article.txt');
 

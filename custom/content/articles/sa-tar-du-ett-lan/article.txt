@@ -1,0 +1,4 @@
+seo_title: Så tar du ett lån - Steg för steg
+page_title: Så tar du ett lån
+menu_title: Så tar du ett lån
+type: tool

@@ -1,4 +1,4 @@
-![](articles/lana-eller-avsta/confused-2681507_1920.jpg)
+![](confused-2681507_1920.jpg)
 
 **Det finns tillfällen då det är mer lämpligt att ta lån, samtidigt som det finns tillfällen då du absolut inte borde låna. I den här artikeln ger jag exempel på båda fallen.**
 
@@ -14,7 +14,7 @@ Många får lönen den 25:e varje månad. Det kan innebära att det inte finns s
 
 Låt oss säga att du tänkt köpa en soffa. På soffan är det halva priset mellan 20:e-24:e. Du hinner alltså inte vänta på att du ska få lön innan erbjudandet upphör att gälla. Om soffan kostade 8000 kr och det är halva priset så är det en besparing på 4000 kr. Att ta ett lån kan därför vara mer ekonomiskt än att vänta tills lönen har kommit.
 
-![](articles/lana-eller-avsta/analytics-3265840_1920.jpg)
+![](analytics-3265840_1920.jpg)
 
 Tänk dock på att välja ett lån med bra villkor och betala av det i tid, helst direkt när du har möjlighet. Många långivare sänker då räntan om lånet betalas av tidigare.
 
@@ -38,7 +38,7 @@ Du bör dock undvika andra typer av lån för att finansiera studier då räntan
 
 Vid köp av mobiltelefon erbjuds oftast att också lägga till ett mobilabonnemang. Då får man en avbetalningsplan och binder upp sig i ett antal år på abonnemanget, men sänker samtidigt oftast priset på telefonen. Ska man ändå ha både en telefon och ett abonnemang, så kan det finnas pengar att spara genom ett sådant avtal.
 
-![](articles/lana-eller-avsta/smartphone-1894723_1920.jpg)
+![](smartphone-1894723_1920.jpg)
 
 Det kan vara bra att ta reda på hur mycket du sparar på en sådan deal innan du genomför den. I vissa fall är besparingen väldigt liten. Något som också är bra att tänka på är att hålla nere antalet telefoner och telefonabonnemang så det inte är flera krediter som ska betalas varje månad.
 
@@ -60,7 +60,7 @@ Kanske har du inte pengar till att betala av ett lån som du har tagit. Vad du i
 
 Det finns många försäljare som använder stress som ett sätt att sälja mer. Stress kan innebära att man inte är lika noga med att se över vad saker kostar och vilka risker man kan ge sig in i. Detsamma gäller när du ska ta ett lån. Ta god tid på dig. Jämför långivarna först och se vilket lån som är bäst för dig. Det kan du spara tusenlappar på.
 
-![](articles/lana-eller-avsta/roulette-1253622_1920.jpg)
+![](roulette-1253622_1920.jpg)
 
 ### För att vinna pengar
 
