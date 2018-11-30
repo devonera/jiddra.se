@@ -3,3 +3,4 @@ seo_description:
 page_title: Låna eller inte låna?
 menu_title: Låna eller inte låna?
 type: tool
+icon: confused-2681507_1920.jpg

@@ -13,3 +13,14 @@ function informationScreenshot($filename) {
 
   crop($from, $to, 900, 450, 0, 0);
 }
+
+function iconScreenshot($filename) {
+  $path_content = path::get('content');
+  $from = sprintf("%s/" . $filename, $path_content);
+
+  $filename = str_replace('.jpg', '-150x150.jpg', $filename);
+
+  $to = sprintf("%s/content/" . $filename, path::get('cache'));
+
+  crop($from, $to, 150, 150);
+}

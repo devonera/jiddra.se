@@ -2,3 +2,4 @@ seo_title: Så tar du ett lån - Steg för steg
 page_title: Så tar du ett lån
 menu_title: Så tar du ett lån
 type: tool
+icon: money-1005465_1920.jpg

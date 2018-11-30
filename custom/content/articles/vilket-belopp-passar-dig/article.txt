@@ -1,0 +1,5 @@
+seo_title: Hur mycket pengar behöver du låna?
+page_title: Hur mycket pengar behöver du låna?
+menu_title: Hur mycket pengar behöver du låna?
+type: tool
+icon: purse-3548021_1920.jpg

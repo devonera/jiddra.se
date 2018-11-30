@@ -1,0 +1,6 @@
+title: 101 spartips
+seo_title: 101 spartips
+page_title: 101 spartips
+menu_title: 101 spartips
+type: tool
+icon: newspaper-1595773_1920.jpg

@@ -2,3 +2,4 @@ seo_title: De 17 vanligaste lyxfällorna
 page_title: De 17 vanligaste lyxfällorna
 menu_title: De 17 vanligaste lyxfällorna
 type: tool
+icon: cash-1169650_1920.jpg

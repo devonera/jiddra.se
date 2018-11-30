@@ -3,3 +3,4 @@ seo_description: Har du hamnat i skuldfällan? Kanske känner du någon som befi
 page_title: Ta dig ur skuldfällan (15 tips)
 menu_title: Ta dig ur skuldfällan (15 tips)
 type: tool
+icon: being-alone-513526_1920.jpg
