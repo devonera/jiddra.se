@@ -3,3 +3,5 @@ ny_kund_belopp_min,3000
 ny_kund_belopp_max,5000
 befintlig_kund_belopp_min,3000
 befintlig_kund_belopp_max,5000
+gratis_belopp_min,3000
+gratis_belopp_max,5000

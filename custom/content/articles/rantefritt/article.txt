@@ -1,8 +1,8 @@
-title: Räntefritt lån
-seo_title: Räntefritt lån - Smslån, snabblån &amp; blancolån
+seo_title: Gratis Smslån &gt; Räntefritt lån - Snabblån &amp; Blancolån
 seo_description: Ta ett räntefritt lån för att slippa extra kostnader.
-page_title: Räntefritt lån
-menu_title: Räntefritt lån
+page_title: Gratis smslån > Räntefritt lån
+menu_title: Gratis smslån > Räntefritt lån
+title: Gratis smslån > Räntefritt lån
 lantyp: smslan
 rows_headline: Räntefria lån
 rows_collection: rantefritt
