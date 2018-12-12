@@ -6,12 +6,12 @@ function thumbScreenshot($page) {
   crop($from, $to, 900, 450, 0, 0);
 }
 
-function informationScreenshot($filename) {
+function informationScreenshot($filename, $position = null) {
   $path_content = path::get('content');
   $from = sprintf("%s/" . $filename, $path_content);
   $to = sprintf("%s/content/" . $filename, path::get('cache'));
 
-  crop($from, $to, 900, 450, 0, 0);
+  crop($from, $to, 900, 450, null, $position);
 }
 
 function iconScreenshot($filename) {

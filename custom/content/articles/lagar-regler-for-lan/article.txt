@@ -1,0 +1,7 @@
+title: Nya konsumentkreditlagen
+seo_title: 11 lagar inom lån och krediter
+seo_description: 
+page_title: 11 lagar inom lån och krediter
+menu_title: 11 lagar inom lån
+type: tool
+rows_headline: hallo
